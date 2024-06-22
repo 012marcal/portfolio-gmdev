@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -7,7 +8,7 @@
 }
 
 body{
-    background-color: #dfc2c278;
+    background-color: #bbb4b4;
     height: 100vh;
 }
 
@@ -27,11 +28,16 @@ header{
     align-items: center;
 }
 
-.logo h1 {
+.logo a{
     color: #fff;
     font-size: 1.15rem;
-    font-weight: 400;
+    font-size: 15px;
+    text-decoration: none;
+}
 
+.logo a:hover{
+    color: #706e6e;
+    transform: scale(1.05);
 }
 
 .nav-list{
@@ -63,34 +69,76 @@ header{
 }
 
 .gm-contact button{
-    padding: 10px 40px;
-    font-size: 18px;
-    font-weight: 600;
-    background-color: #706e6e;
+    padding: 1rem 2rem;
+    font-size: 1rem;
     color: #fff;
-    border: 0;
+    background-color: #706e6e;
     border-radius: 30px;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
 .gm-contact button:hover{
-    box-shadow: 0px 0px 8px #000;
-
+    background-color: #3d3d3d;
 }
 
-
-.inicio{
-
+.flex{
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+}
+/* ESTILO  INICIO*/
 
+section.inicio{
+
+    padding: 100px 4%;
 }
 
-.inicio img{
+section.inicio .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
 
+.txt-site p{
+    
+    color: #000000;
+    font-size: 40px;
+    font-weight: 1000;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+.txt-site p::after{
+    content: '|';
+    opacity: 1;
+    margin-left: 5px;
+    display: inline-block;
+    animation: pisca .7s infinite;
+  }
+  @keyframes pisca {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }}
+
+    .btn{
+
+        margin-top: 100px;
+        padding: 1rem 2rem;
+        font-size: 1rem;
+        color: #fff;
+        background-color: #706e6e;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    
+    .btn:hover{
+        background-color: #3d3d3d;
+    }
+
+
+.foto img{
     width: 300px;
-    height: 300;
-
+    height: 300px;
     border-radius: 150px;
 }
-
